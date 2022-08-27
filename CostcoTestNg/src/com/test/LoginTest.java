@@ -21,13 +21,6 @@ public class LoginTest extends Base {
 		Assert.assertEquals(pageURL, "https://www.costco.com/");
 	}
 
-	//@Test
-	//public void negativeLoginTest() {
-		//driver.get("https://www.costco.com/");
-		//LogIn loginPage = new LogIn(driver);
-		//loginPage.login("natenycstandard@gmail.com", "@nahian000");
-
-		//WebElement errorMsg = driver.findElement(By.cssSelector(".error-message-container.error"));
-		//Assert.assertEquals(errorMsg.isDisplayed(), true);
+	
 	}
 
