@@ -9,7 +9,7 @@ import com.pages.LogIn;
 
 public class LoginTest extends Base {
 	
-//okay
+//okay 1
 
 	@Test
 	public void loginTest() {
