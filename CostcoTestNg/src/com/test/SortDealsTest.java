@@ -11,7 +11,7 @@ public class SortDealsTest extends Base {
 		driver.get("https://www.costco.com/");
 		SortDeals inAday = new SortDeals();
 		inAday.InOrder();
-		
+		// try
 		String pageURL = driver.getCurrentUrl();
 		Assert.assertEquals(pageURL, "https://www.costco.com/CatalogSearch?keyword=OFF&dept=All&sortBy=item_page_views+desc");
 	}
