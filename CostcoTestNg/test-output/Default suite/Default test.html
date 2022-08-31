@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 27 22:35:23 EDT 2022</td>
+<td>Started on:</td><td>Tue Aug 30 22:52:47 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>20 seconds (20721 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11827 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.LoginTest.loginTest()'><b>loginTest</b><br>Test class: com.test.LoginTest</td>
-<td><div><pre>java.lang.AssertionError: expected [https://www.costco.com/] but found [https://signin.costco.com/e0714dd4-784d-46d6-a278-3e29553483eb/B2C_1A_SSO_WCS_signup_signin_500/oauth2/v2.0/authorize?ClientName=USBC&amp;ui_locales=en-US&amp;scope=openid&amp;response_type=id_token&amp;redirect_uri=https%3A%2F%2Fwww.costco.com%2FOAuthLogonCmd&amp;state=DM_PersistentCookieCreated%3Dtrue%26URL%3D%5BSSO%5D%2F%5BSSO%5D&amp;nonce=CLhaNaKAd8IMEbqu&amp;client_id=4900eb1f-0c10-4bd9-99c3-c59e6c1ecebf&amp;TC=0&amp;response_mode=form_post]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.test.LoginTest.loginTest(LoginTest.java:21)
+<td title='com.test.SortDealsTest.Dealstest()'><b>Dealstest</b><br>Test class: com.test.SortDealsTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at com.pages.SortDeals.InOrder(SortDeals.java:15)
+	at com.test.SortDealsTest.Dealstest(SortDealsTest.java:12)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,15 +107,10 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1410514922", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1410514922'><pre>java.lang.AssertionError: expected [https://www.costco.com/] but found [https://signin.costco.com/e0714dd4-784d-46d6-a278-3e29553483eb/B2C_1A_SSO_WCS_signup_signin_500/oauth2/v2.0/authorize?ClientName=USBC&amp;ui_locales=en-US&amp;scope=openid&amp;response_type=id_token&amp;redirect_uri=https%3A%2F%2Fwww.costco.com%2FOAuthLogonCmd&amp;state=DM_PersistentCookieCreated%3Dtrue%26URL%3D%5BSSO%5D%2F%5BSSO%5D&amp;nonce=CLhaNaKAd8IMEbqu&amp;client_id=4900eb1f-0c10-4bd9-99c3-c59e6c1ecebf&amp;TC=0&amp;response_mode=form_post]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.test.LoginTest.loginTest(LoginTest.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1760020675", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1760020675'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at com.pages.SortDeals.InOrder(SortDeals.java:15)
+	at com.test.SortDealsTest.Dealstest(SortDealsTest.java:12)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -150,8 +140,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>13</td>
-<td>com.test.LoginTest@7fa98a66</td></tr>
+<td>2</td>
+<td>com.test.SortDealsTest@42e99e4a</td></tr>
 </table><p>
 </body>
 </html>
