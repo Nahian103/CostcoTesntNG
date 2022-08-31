@@ -5,16 +5,16 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.pages.LogIn;
+import com.pages.LogIn1;
 
-public class LoginTest extends Base {
+public class LoginTest1 extends Base {
 	
 //okay 1
 
 	@Test
 	public void loginTest() {
 		driver.get("https://www.costco.com/");
-		LogIn loginPage = new LogIn(driver);
+		LogIn1 loginPage = new LogIn1(driver);
 		loginPage.login("natenycstandard@gmail.com", "@Nahian103");
 		
 		String pageURL = driver.getCurrentUrl();

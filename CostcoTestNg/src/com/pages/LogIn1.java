@@ -3,15 +3,15 @@ package com.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LogIn {
+public class LogIn1 {
 
 WebDriver driver;
 	
-	public LogIn(WebDriver driver) {
+	public LogIn1(WebDriver driver) {
 		this.driver = driver;
 	}
 	
-
+//login1
 
 
 	public void login(String userName, String password) {
