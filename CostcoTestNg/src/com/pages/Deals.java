@@ -12,7 +12,14 @@ WebDriver driver;
 	}
 	
    public void GreatDeals() {
+	   
 	
 	   driver.findElement(By.id("Home_Ancillary_2")).click();;
-}
+   }
+ 
+   public void Sort() {
+	   driver.findElement(By.id("sort_by"));
+	   
+   }
+   
 }

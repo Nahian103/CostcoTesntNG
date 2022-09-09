@@ -10,6 +10,7 @@ public class DealsTest extends Base{
 	@Test
 	public void Dealstest() {
 		driver.get("https://www.costco.com/");
+		driver.manage().window().maximize();
 		Deals BestDeals = new Deals(driver);
 		BestDeals.GreatDeals();
 		

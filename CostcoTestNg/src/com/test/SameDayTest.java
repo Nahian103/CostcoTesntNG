@@ -14,7 +14,7 @@ public class SameDayTest extends Base{
 		Rightway.Instant();
 		
 		String pageURL = driver.getCurrentUrl();
-		Assert.assertEquals(pageURL, "https://www.costco.com/");
+		Assert.assertEquals(pageURL, "https://sameday.costco.com/?utm_source=nav&zipcode=11377");
 	}
 
 }

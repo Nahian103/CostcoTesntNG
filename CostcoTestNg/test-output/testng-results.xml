@@ -2,24 +2,56 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-30T22:52:47 EDT" name="Default suite" finished-at="2022-08-30T22:52:58 EDT" duration-ms="11827">
+  <suite started-at="2022-09-09T11:28:37 EDT" name="Default suite" finished-at="2022-09-09T11:29:06 EDT" duration-ms="29628">
     <groups>
     </groups>
-    <test started-at="2022-08-30T22:52:47 EDT" name="Default test" finished-at="2022-08-30T22:52:58 EDT" duration-ms="11827">
+    <test started-at="2022-09-09T11:28:37 EDT" name="Default test" finished-at="2022-09-09T11:29:06 EDT" duration-ms="29628">
       <class name="com.test.SortDealsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.SortDealsTest@42e99e4a]" started-at="2022-08-30T22:52:47 EDT" name="setUp" finished-at="2022-08-30T22:52:55 EDT" duration-ms="8802" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.SortDealsTest@42e99e4a]" started-at="2022-09-09T11:28:37 EDT" name="setUp" finished-at="2022-09-09T11:28:50 EDT" duration-ms="12985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Dealstest()[pri:0, instance:com.test.SortDealsTest@42e99e4a]" started-at="2022-08-30T22:52:56 EDT" name="Dealstest" finished-at="2022-08-30T22:52:58 EDT" duration-ms="2894" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="Dealstest()[pri:0, instance:com.test.SortDealsTest@42e99e4a]" started-at="2022-09-09T11:28:50 EDT" name="Dealstest" finished-at="2022-09-09T11:29:06 EDT" duration-ms="16456" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#sort_by"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-8GDJCM1', ip: '192.168.1.63', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dc8338fda052ae67fb0b5092ec119b58, findElement {using=id, value=sort_by}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\mellu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53390}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53390/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dc8338fda052ae67fb0b5092ec119b58]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at com.pages.SortDeals.InOrder(SortDeals.java:15)
-at com.test.SortDealsTest.Dealstest(SortDealsTest.java:12)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#sort_by"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-8GDJCM1', ip: '192.168.1.63', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dc8338fda052ae67fb0b5092ec119b58, findElement {using=id, value=sort_by}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\mellu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53390}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53390/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dc8338fda052ae67fb0b5092ec119b58
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at com.pages.Deals.Sort(Deals.java:20)
+at com.test.SortDealsTest.Dealstest(SortDealsTest.java:17)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,11 +82,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Dealstest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.SortDealsTest@42e99e4a]" started-at="2022-08-30T22:52:58 EDT" name="tearDown" finished-at="2022-08-30T22:52:58 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.SortDealsTest@42e99e4a]" started-at="2022-09-09T11:29:06 EDT" name="tearDown" finished-at="2022-09-09T11:29:06 EDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
