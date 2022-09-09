@@ -1,23 +1,22 @@
 package com.test;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.pages.LogIn;
+import com.pages.Services;
 
-public class LoginTest extends Base {
+public class ServicesTest extends Base {
 	
-//patwary01
-
+	
 	@Test
 	
-	public void loginTest() {
-		driver.get("https://www.costco.com/");
-		LogIn loginPage = new LogIn(driver);
+	public void ServicesTest() {
 		
-		loginPage.login("natenycstandard@gmail.com", "@Nahian103");
+		driver.get("https://www.costco.com/");
+		Services servicespage = new Services(driver);
+		
+		
 		
 		String pageURL = driver.getCurrentUrl();
 		Assert.assertEquals(pageURL, "https://www.costco.com/");
@@ -25,4 +24,6 @@ public class LoginTest extends Base {
 
 	
 	}
+
+
 

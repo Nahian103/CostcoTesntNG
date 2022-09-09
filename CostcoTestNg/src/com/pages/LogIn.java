@@ -19,9 +19,10 @@ WebDriver driver;
 
 		driver.findElement(By.id("header_sign_in")).click();
 		driver.findElement(By.id("signInName")).sendKeys(userName);
-		driver.findElement(By.id("password")).sendKeys(password);
+		driver.findElement(By.id("password")).sendKeys("password");
 		driver.findElement(By.xpath("/html//button[@id='next']")).click();
-	}
+	
 
 	}
 
+}
