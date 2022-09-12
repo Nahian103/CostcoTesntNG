@@ -10,7 +10,7 @@ public class SortDealsTest extends Base {
 	
 	@Test
 	public void Dealstest() {
-		driver.get("https://www.costco.com/");
+		driver.get("https://www.costco.com/CatalogSearch?keyword=OFF&dept=All&sortBy=item_page_views+desc");
 		HomePage homepage = new HomePage(driver);
 		homepage.goToDealsPage();
 		Deals BestDeals = new Deals(driver);
