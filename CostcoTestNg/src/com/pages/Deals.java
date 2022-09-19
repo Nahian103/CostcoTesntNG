@@ -2,6 +2,7 @@ package com.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class Deals {
 
@@ -14,14 +15,18 @@ WebDriver driver;
    public void GreatDeals() {
 	   
 	
-	  // driver.findElement(By.id("Home_Ancillary_2")).click();
+	   driver.findElement(By.id("Home_Ancillary_2")).click();
 	  
    }
  
    public void Sort() {
-	   driver.findElement(By.id("sort_by")).click();
+	  
 	   
+	  // driver.findElement(By.id("sort_by")).click();
+	 // driver.findElements(By.id("(Price (High to Low))"));
 	   
+	   Select dropdown = new Select(driver.findElement(By.id("sort_by")));
+	  dropdown.selectByVisibleText("Price (High to Low)");
 	  
 	   
    }
