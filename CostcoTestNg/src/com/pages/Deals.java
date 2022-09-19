@@ -22,9 +22,6 @@ WebDriver driver;
    public void Sort() {
 	  
 	   
-	  // driver.findElement(By.id("sort_by")).click();
-	 // driver.findElements(By.id("(Price (High to Low))"));
-	   
 	   Select dropdown = new Select(driver.findElement(By.id("sort_by")));
 	  dropdown.selectByVisibleText("Price (High to Low)");
 	  
