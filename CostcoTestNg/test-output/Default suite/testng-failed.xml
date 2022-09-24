@@ -3,7 +3,6 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
       <class name="com.test.SortDealsTest">
         <methods>
           <include name="Dealstest"/>
@@ -11,15 +10,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.test.SortDealsTest -->
-=======
-      <class name="com.test.SearchTest">
-        <methods>
-          <include name="searchtest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.test.SearchTest -->
->>>>>>> branch 'Nahian1' of https://github.com/Nahian103/CostcoTesntNG.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
